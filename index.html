@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stunning Image Hover Effect</title>
+  <title>CSS-only Modal</title>
   <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
 <body>
-  <div class="image-container">
-    <img src="image.jpeg" alt="Image" class="hover-effect">
+  <!-- Modal trigger button -->
+  <label for="modal-toggle" class="modal-btn">Open Modal</label>
+  
+  <!-- Hidden checkbox to toggle modal -->
+  <input type="checkbox" id="modal-toggle" style="display: none;">
+  
+  <!-- Modal container -->
+  <div class="modal-container">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- Modal close button -->
+      <label for="modal-toggle" class="modal-close-btn">&times;</label>
+      
+      <!-- Modal content here -->
+      <h2>Modal Title</h2>
+      <p>This is the modal content. You can add any content you want here.</p>
+    </div>
   </div>
 </body>
 </html>
